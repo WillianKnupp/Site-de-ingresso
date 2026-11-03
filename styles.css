@@ -347,3 +347,104 @@ footer span {
         height: 430px;
     }
 }
+
+
+/* ÁREA DE COMENTÁRIOS */
+
+.comentarios-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    color: white;
+}
+
+.comentarios-container h1,
+.comentarios-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.comentarios-container > p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#form-comentario {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#form-comentario input[type="text"],
+#form-comentario textarea {
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+}
+
+#form-comentario textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.estrelas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    width: fit-content;
+}
+
+.estrelas input {
+    display: none;
+}
+
+.estrelas label {
+    color: #777;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.estrelas input:checked ~ label,
+.estrelas label:hover,
+.estrelas label:hover ~ label {
+    color: gold;
+}
+
+#form-comentario button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #d71920;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#form-comentario button:hover {
+    background: #a80f15;
+}
+
+.lista-comentarios {
+    margin-top: 45px;
+}
+
+.comentario-card {
+    background: #222;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #d71920;
+}
+
+.comentario-card h3 {
+    margin-bottom: 8px;
+}
+
+.comentario-card .avaliacao {
+    color: gold;
+    margin-bottom: 10px;
+}
